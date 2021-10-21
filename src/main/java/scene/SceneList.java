@@ -44,6 +44,7 @@ public class SceneList {
     }
 
     public Scene getCurrentScene() {
+        assert currentSceneIndex <= 6;
         return this.scenes.get(currentSceneIndex);
     }
 
@@ -58,6 +59,7 @@ public class SceneList {
 
     public void incrementSceneNumber() {
         this.currentSceneIndex++;
+        assert currentSceneIndex <= 6;
         dataFile.resetFile(currentSceneIndex);
     }
 

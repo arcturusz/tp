@@ -90,6 +90,8 @@ public class SceneListBuilder {
         sceneList.addScene(wrongEndingScene);
         sceneList.addScene(truthScene);
 
+        assert sceneList.getCurrentSceneIndex() <= 6;
+
         return sceneList;
     }
 }
